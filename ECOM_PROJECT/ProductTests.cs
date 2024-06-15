@@ -10,8 +10,8 @@ namespace ECOM_PROJECT
         public void ProductID_WithinValidRange()
         {
             // Arrange
-            int productID = 500;
-            string productName = "Test Product";
+            int productID = 405;
+            string productName = "Shourya's Product";
             decimal price = 100;
             int stock = 50;
 
@@ -19,7 +19,7 @@ namespace ECOM_PROJECT
             Product product = new Product(productID, productName, price, stock);
 
             // Assert
-            Assert.That(product.ProductID, Is.EqualTo(500));
+            Assert.That(product.ProductID, Is.EqualTo(405));
         }
 
         [Test]
@@ -27,7 +27,7 @@ namespace ECOM_PROJECT
         {
             // Arrange
             int productID = 1;
-            string productName = "Test Product";
+            string productName = "Shourya's Product";
             decimal price = 100;
             int stock = 50;
 
@@ -43,7 +43,7 @@ namespace ECOM_PROJECT
         {
             // Arrange
             int productID = 1000;
-            string productName = "Test Product";
+            string productName = "Shourya's Product";
             decimal price = 100;
             int stock = 50;
 
@@ -60,7 +60,7 @@ namespace ECOM_PROJECT
         {
             // Arrange
             int productID = 500;
-            string productName = "Test Product";
+            string productName = "Shourya's Product";
             decimal price = 100;
             int stock = 50;
 
@@ -68,7 +68,7 @@ namespace ECOM_PROJECT
             Product product = new Product(productID, productName, price, stock);
 
             // Assert
-            Assert.That(product.ProductName, Is.EqualTo("Test Product"));
+            Assert.That(product.ProductName, Is.EqualTo("Shourya's Product"));
         }
 
         [Test]
@@ -109,15 +109,15 @@ namespace ECOM_PROJECT
         {
             // Arrange
             int productID = 500;
-            string productName = "Test Product";
-            decimal price = 100;
+            string productName = "Shourya's Product";
+            decimal price = 123.55m;
             int stock = 50;
 
             // Act
             Product product = new Product(productID, productName, price, stock);
 
             // Assert
-            Assert.That(product.Price, Is.EqualTo(100));
+            Assert.That(product.Price, Is.EqualTo(123.55));
         }
 
         [Test]
@@ -125,7 +125,7 @@ namespace ECOM_PROJECT
         {
             // Arrange
             int productID = 500;
-            string productName = "Test Product";
+            string productName = "Shourya's Product";
             decimal price = 1;
             int stock = 50;
 
@@ -141,7 +141,7 @@ namespace ECOM_PROJECT
         {
             // Arrange
             int productID = 500;
-            string productName = "Test Product";
+            string productName = "Shourya's Product";
             decimal price = 5000;
             int stock = 50;
 
@@ -158,15 +158,15 @@ namespace ECOM_PROJECT
         {
             // Arrange
             int productID = 500;
-            string productName = "Test Product";
+            string productName = "Shourya's Product";
             decimal price = 100;
-            int stock = 50;
+            int stock = 54;
 
             // Act
             Product product = new Product(productID, productName, price, stock);
 
             // Assert
-            Assert.That(product.Stock, Is.EqualTo(50));
+            Assert.That(product.Stock, Is.EqualTo(54));
         }
 
         [Test]
@@ -174,7 +174,7 @@ namespace ECOM_PROJECT
         {
             // Arrange
             int productID = 500;
-            string productName = "Test Product";
+            string productName = "Shourya's Product";
             decimal price = 100;
             int stock = 1;
 
@@ -190,7 +190,7 @@ namespace ECOM_PROJECT
         {
             // Arrange
             int productID = 500;
-            string productName = "Test Product";
+            string productName = "Shourya's Product";
             decimal price = 100;
             int stock = 1000;
 
@@ -207,16 +207,16 @@ namespace ECOM_PROJECT
         {
             // Arrange
             int productID = 500;
-            string productName = "Test Product";
+            string productName = "Shourya's Product";
             decimal price = 100;
-            int stock = 50;
+            int stock = 150;
             Product product = new Product(productID, productName, price, stock);
 
             // Act
             product.IncreaseStock(10);
 
             // Assert
-            Assert.That(product.Stock, Is.EqualTo(60));
+            Assert.That(product.Stock, Is.EqualTo(160));
         }
 
         [Test]
@@ -224,16 +224,16 @@ namespace ECOM_PROJECT
         {
             // Arrange
             int productID = 500;
-            string productName = "Test Product";
+            string productName = "Shourya's Product";
             decimal price = 100;
-            int stock = 50;
+            int stock = 57;
             Product product = new Product(productID, productName, price, stock);
 
             // Act
             product.IncreaseStock(0);
 
             // Assert
-            Assert.That(product.Stock, Is.EqualTo(50));
+            Assert.That(product.Stock, Is.EqualTo(57));
         }
 
         [Test]
@@ -241,16 +241,16 @@ namespace ECOM_PROJECT
         {
             // Arrange
             int productID = 500;
-            string productName = "Test Product";
+            string productName = "Shourya's Product";
             decimal price = 100;
-            int stock = 50;
+            int stock = 70;
             Product product = new Product(productID, productName, price, stock);
 
             // Act
             product.IncreaseStock(-10);
 
             // Assert
-            Assert.That(product.Stock, Is.EqualTo(50));  // Assuming negative values are ignored
+            Assert.That(product.Stock, Is.EqualTo(70));  // Assuming negative values are ignored
         }
 
         // Tests for DecreaseStock method
@@ -259,16 +259,16 @@ namespace ECOM_PROJECT
         {
             // Arrange
             int productID = 500;
-            string productName = "Test Product";
+            string productName = "Shourya's Product";
             decimal price = 100;
-            int stock = 50;
+            int stock = 90;
             Product product = new Product(productID, productName, price, stock);
 
             // Act
             product.DecreaseStock(10);
 
             // Assert
-            Assert.That(product.Stock, Is.EqualTo(40));
+            Assert.That(product.Stock, Is.EqualTo(80));
         }
 
         [Test]
@@ -276,13 +276,13 @@ namespace ECOM_PROJECT
         {
             // Arrange
             int productID = 500;
-            string productName = "Test Product";
+            string productName = "Shourya's Product";
             decimal price = 100;
-            int stock = 50;
+            int stock = 120;
             Product product = new Product(productID, productName, price, stock);
 
             // Act
-            product.DecreaseStock(60);
+            product.DecreaseStock(130);
 
             // Assert
             Assert.That(product.Stock, Is.EqualTo(0)); // Assuming stock can't go below 0
@@ -293,16 +293,16 @@ namespace ECOM_PROJECT
         {
             // Arrange
             int productID = 500;
-            string productName = "Test Product";
+            string productName = "Shourya's Product";
             decimal price = 100;
-            int stock = 50;
+            int stock = 330;
             Product product = new Product(productID, productName, price, stock);
 
             // Act
             product.DecreaseStock(0);
 
             // Assert
-            Assert.That(product.Stock, Is.EqualTo(50));
+            Assert.That(product.Stock, Is.EqualTo(330));
         }
     }
 
