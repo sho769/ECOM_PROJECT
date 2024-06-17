@@ -8,7 +8,7 @@ namespace ECOM_PROJECT
 {
     public class Product
     {
-        public int ProductID { get; }
+        public int ProductID { get; set; }
         public string ProductName { get; }
         public decimal Price { get; }
         public int Stock { get; private set; }
